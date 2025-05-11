@@ -6,27 +6,19 @@
   <title>RISE Store</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .nav-item {
-  position: relative;
-}
-
-.dropdown-mega {
+    .dropdown-mega {
+  display: none; /* hidden by default */
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  display: none;
-  background: white;
+  background: #fff;
   padding: 2rem;
-  z-index: 999;
+  z-index: 1000;
   border-top: 3px solid #d4af37;
 }
 
-.nav-item:hover .dropdown-mega {
-  display: block;
-}
-
-    .dropdown-mega {
+    /* .dropdown-mega {
       position: absolute;
       left: 0;
       right: 0;
@@ -36,7 +28,7 @@
       padding: 2rem;
       z-index: 1000;
       border-top: 3px solid #d4af37;
-    }
+    } */
     .nav-item:hover .dropdown-mega {
       display: block;
     }
@@ -84,7 +76,7 @@
 </div>
 
 <!-- Navigation Menu -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#">HOME</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -125,7 +117,39 @@
             </div>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#">WOMENS</a></li>
+        <li class="nav-item dropdown position-static">
+          <a class="nav-link dropdown-toggle" href="#">WOMENS</a>
+          <div class="dropdown-mega d-lg-flex">
+            <div class="row container">
+              <div class="col-md-3">
+                <h6>TOPS</h6>
+                <ul>
+                  <li>Baseball Jersey</li>
+                  <li>Formal Shirt</li>
+                  <li>Kabli</li>
+                  <li>Polo Shirt</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h6>BOTTOMS</h6>
+                <ul>
+                  <li>Five Pocket Pant</li>
+                  <li>Chino Long Pant</li>
+                  <li>Formal Pant</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h6>WINTER</h6>
+                <ul>
+                  <li>Sweater T-Shirt</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <img src="womens.jpg" alt="Mens Banner" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </li>
         <li class="nav-item"><a class="nav-link" href="#">KIDS</a></li>
         <li class="nav-item"><a class="nav-link" href="#">ACCESSORIES</a></li>
         <li class="nav-item"><a class="nav-link" href="#">UNISEX</a></li>
@@ -133,7 +157,69 @@
       </ul>
     </div>
   </div>
+</nav> -->
+
+<!-- Toogler Navigation  -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li> 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Mens</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Tops</a></li>
+            <li><a class="dropdown-item" href="#">Bottoms</a></li>
+            <li><a class="dropdown-item" href="#">Winter</a></li>
+          </ul>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Womens</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Tops</a></li>
+            <li><a class="dropdown-item" href="#">Bottoms</a></li>
+            <li><a class="dropdown-item" href="#">Winter</a></li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Kids</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accessories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Up To 50%</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
+
+<!-- Banner Area  -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="rise_bannar.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src="flash_sale.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <!-- Content Area Placeholder -->
 <main class="container py-5">
