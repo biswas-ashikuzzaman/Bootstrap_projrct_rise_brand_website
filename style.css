@@ -1,0 +1,87 @@
+/* reset browser  */
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .dropdown-mega {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 2rem;
+  z-index: 1000;
+  border-top: 3px solid #d4af37;
+}
+
+    /* .dropdown-mega {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      display: none;
+      background: #fff;
+      padding: 2rem;
+      z-index: 1000;
+      border-top: 3px solid #d4af37;
+    } */
+    .nav-item:hover .dropdown-mega {
+      display: block;
+    }
+    .nav-item:hover .dropdown-mega{
+        background-color: azure;
+    }
+    .dropdown-mega h6 {
+      border-bottom: 1px solid #d4af37;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .dropdown-mega ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .dropdown-mega ul li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+    .top-bar {
+      background: #f8f9fa;
+      font-size: 14px;
+      padding: 5px 0;
+    }
+
+    /* image hover up  */
+    /* .hover-slide-up {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  } */
+
+  /* .hover-slide-up:hover {
+    transform: translateY(-10px); /* moves up */
+  /* } */ */
+  #pic1 img{
+    overflow: hidden;
+    transition: all 5s;
+  }
+  #pic1:hover img{
+   transform: scale(1.1);
+  }
+
+  /* carosel  */
+  .slider{
+    max-width: 100%;
+    display: flex;
+  }
+  .slider .card{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+  }
+  
+  .slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
