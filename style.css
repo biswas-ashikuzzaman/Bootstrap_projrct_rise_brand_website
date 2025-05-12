@@ -85,3 +85,22 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+  #f_content{
+    color: white;
+  }
+  #pay{
+    position: relative;
+  }
+  #pay img{
+    margin-right: 0px;
+  }
+  caption{
+    position: absolute;
+    margin-left: 3px;
+    margin-bottom: -10px;
+    font-size: small;
+    display: inline;
+    z-index: 9999;
+
+  }

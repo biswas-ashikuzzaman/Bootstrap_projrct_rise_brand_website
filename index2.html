@@ -1,5 +1,6 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,28 +8,32 @@ d<!DOCTYPE html>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="script.js">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
+
 <body>
 
-<!-- Top Bar -->
-<div class="top-bar">
-  <div class="container d-flex justify-content-end">
-    <a href="#" class="text-dark text-decoration-none small">HELLO, SIGN IN</a>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-end">
+      <a href="#" class="text-dark text-decoration-none small">HELLO, SIGN IN</a>
+    </div>
   </div>
-</div>
 
-<!-- Header Middle -->
-<div class="container d-flex justify-content-between align-items-center py-3">
-  <img src="logo.png" alt="RISE Logo" style="height: 40px;">
-  <input type="text" class="form-control mx-3 w-50" placeholder="Search Products...">
-  <div>
-    <a href="#" class="me-3 text-dark text-decoration-none">WISH LIST</a>
-    <a href="#" class="text-dark text-decoration-none"><i class="bi bi-cart3"></i></a>
+  <!-- Header Middle -->
+  <div class="container d-flex justify-content-between align-items-center py-3">
+    <img src="logo.png" alt="RISE Logo" style="height: 40px;">
+    <input type="text" class="form-control mx-3 w-50" placeholder="Search Products...">
+    <div>
+      <a href="#" class="me-3 text-dark text-decoration-none">WISH LIST</a>
+      <a href="#" class="text-dark text-decoration-none"><i class="bi bi-cart3"></i></a>
+    </div>
   </div>
-</div>
 
-<!-- Navigation Menu -->
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Navigation Menu -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#">HOME</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -111,179 +116,215 @@ d<!DOCTYPE html>
   </div>
 </nav> -->
 
-<!-- Toogler Navigation  -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="logo.png"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
+  <!-- Toogler Navigation  -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Mens</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tops</a></li>
+              <li><a class="dropdown-item" href="#">Bottoms</a></li>
+              <li><a class="dropdown-item" href="#">Winter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Womens</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tops</a></li>
+              <li><a class="dropdown-item" href="#">Bottoms</a></li>
+              <li><a class="dropdown-item" href="#">Winter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Up To 50%</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Area  -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="rise_bannar.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="flash_sale.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li> 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Mens</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Tops</a></li>
-            <li><a class="dropdown-item" href="#">Bottoms</a></li>
-            <li><a class="dropdown-item" href="#">Winter</a></li>
-          </ul>
-        </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Womens</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Tops</a></li>
-            <li><a class="dropdown-item" href="#">Bottoms</a></li>
-            <li><a class="dropdown-item" href="#">Winter</a></li>
-          </ul>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">Kids</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Accessories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Up To 50%</a>
-        </li>
-      </ul>
-    </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</nav>
 
-<!-- Banner Area  -->
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="1000">
-      <img src="rise_bannar.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="flash_sale.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<!-- Content Area Placeholder Mens-Womens-->
- <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6" id="pic1">
-      <img src="mens_content.jpg" alt="">
-    </div>
-    <div class="col-md-6" id="pic1">
-    <img src="womens.jpg" alt="">
+  <!-- Content Area Placeholder Mens-Womens-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6" id="pic1">
+        <img src="mens_content.jpg" alt="">
+      </div>
+      <div class="col-md-6" id="pic1">
+        <img src="womens.jpg" alt="">
+      </div>
     </div>
   </div>
- </div>
-<!-- <div class="container-fluid px-0">
+  <!-- <div class="container-fluid px-0">
   <div class="row">
     <div class="col-md-6" id="pic1">
 <img src="mens_content.jpg" class="img-fluid">
     </div>
     <div class="col-md-6" id="pic1">
 <img src="womens_content.jpg" class="img-fluid> -->
-   
 
-<!-- BROWSE CATEGORIES  -->
- <h2 style="text-align: center; font-size: 21px;margin-top: 10px;">BROWSE CATEGORIES</h2>
-<!-- content item image carousel  -->
- <div class="slider owl-carousel">
-        <div class="card">
-          <a href="#"><img src="polo_shirt.jpg" alt=""></a>
-        </div>
-        <div class="card">
-          <a href="#"><img src="punjabi.jpg" alt=""></a>
-        </div>
-        <div class="card">
-          <a href="#"><img src="joggers.jpg" alt=""></a>
-        </div>
-        <div class="card">
-          <a href="#"><img src="accesories.jpg" alt=""></a>
-        </div>
-        <div class="card">
-          <a href="#"><img src="t-shirt.jpg" alt=""></a>
-        </div>
-        <div class="card">
-          <a href="#"><img src="Casual_tops.jpg" alt=""></a>
-        </div>
-        <div class="card">
-          <a href="#"><img src="image/d37.jpg" alt=""></a>
-        </div>
-        <div class="card">
-          <a href="#"><img src="Ethentic_tops.jpg" alt=""></a>
+
+  <!-- BROWSE CATEGORIES  -->
+  <h2 style="text-align: center; font-size: 21px;margin-top: 10px;">BROWSE CATEGORIES</h2>
+  <!-- content item image carousel  -->
+  <div class="slider owl-carousel">
+    <div class="card">
+      <a href="#"><img src="polo_shirt.jpg" alt=""></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="punjabi.jpg" alt=""></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="joggers.jpg" alt=""></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="accesories.jpg" alt=""></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="t-shirt.jpg" alt=""></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="Casual_tops.jpg" alt=""></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="image/d37.jpg" alt=""></a>
+    </div>
+    <div class="card">
+      <a href="#"><img src="Ethentic_tops.jpg" alt=""></a>
+    </div>
+  </div>
+
+  <!-- BROWSE CATEGORIES 2 -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-8">
+        <div class="col-12">
+          <img src="baseball jersy.jpg" alt="jersy" style="height: 450px;width: 100%;">
+          <div class="row">
+            <div class="col-6"><img src="footwears.jpg" alt="footwears" style="width: 100%; height: 450px;"></div>
+            <div class="col-6"><img src="Membership_card.jpg" alt="Membership_card" style="width: 100%; height: 450px;"></div>
+          </div>
         </div>
       </div>
-
-    <!-- BROWSE CATEGORIES 2 -->
-<div class="container-fluid px-0">
-  <div class="row">
-    <div class="col-8" style="height: 376px;">
-    <img src="baseball jersy.jpg" alt="jersy" style="width: 100%;">
-    </div>
-    <div class="col-4">
-      <img src="denim.jpg" alt="denim" style="width: 100%;">
+      <div class="col-4">
+        <img src="denim.jpg" alt="denim" style="width: 100%; height: 900px;">
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-4">
-      <img src="footwears.jpg" alt="footwears" style="width: 100%;">
-    </div>
-    <div class="col-4">
-      <img src="Membership_card.jpg" alt="Membership_card" style="width: 100%;">
+
+  <!-- promotion of website -->
+  <h3 style="margin-top: 20px;text-align: center;">WE MAKE SHOPPING EASY</h3>
+  <div class=".container-fluid ">
+    <div class="row">
+      <div class="col-md-4" style="margin-top: 5px;">
+        <img src="lookbook.jpg" alt="lookbook" style="width: 100%;">
+      </div>
+      <div class="col-md-4" style="margin-top: 5px;">
+        <img src="policies.jpg" alt="policies" style="width: 100%;">
+      </div>
+      <div class="col-md-4" style="margin-top: 5px;">
+        <img src="offers.jpg" alt="offers" style="width: 100%;">
+      </div>
     </div>
   </div>
-</div>
 
-<!-- promotion of website -->
- <h3 style="margin-top: 20px;text-align: center;">WE MAKE SHOPPING EASY</h3>
- <div class=".container-fluid ">
-  <div class="row">
-    <div class="col-md-4">
-      <img src="lookbook.jpg" alt="lookbook" style="width: 100%;">
-    </div>
-    <div class="col-md-4 px-">
-      <img src="policies.jpg" alt="policies"style="width: 100%;">
-    </div>
-    <div class="col-md-4 px-">
-      <img src="offers.jpg" alt="offers"style="width: 100%;">
+  <!-- Footer Main  -->
+  <div class="container-fluid bg-dark" id="f_content">
+    <div class="row">
+      <div class="col-md-3">
+        <div class=""> <img src="white_logo.png" alt=""></div>
+        <div class=""> <span>RISE is a fashion forward retailer that blends local culture with global trends creating a
+            unique spin on fashion. Pioneering Streetwear into the Bangladesh market, RISE offers a wide array of
+            clothing and accessories.</span></div>
+        <div class=""> <span>Connect with Us</span></div>
+        <div class=""> Icon</div>
+
+      </div>
+      <div class="col-md-3">
+        <div>Need Help?</div>
+        <div>01708156699
+          ( 10 AM – 6 PM )
+          (Except Weekend/Govt. Holidays)</div>
+        <div>online@rise-brand.com</div>
+
+      </div>
+      <div class="col-md-3">
+        <div>Information</div>
+        <div>About Us</div>
+        <div> Contact Us</div>
+        <div>Store Locator</div>
+        <div>lOYALTY Club Card</div>
+        <div> Size Guied</div>
+        <div>Join Us</div>
+        <div>Fit Guied</div>
+      </div>
+      <div class="col-md-3">
+        <div>Service and Shopping</div>
+        <div>Customer Service</div>
+        <div>Privacy Policy</div>
+        <div>Terms and Condition</div>
+        <div>Billing and Shipping Policy</div>
+        <div>Return and Exchange Policy</div>
+        <div>Track Your Order</div>
+
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Footer Main  -->
- <div class="container-fluid">
-  <div class="row">
-    <div class="col-4">Col1
-
-    </div>
-    <div class="col-4">Col1
-
-    </div>
-    <div class="col-4">Col1
-
-    </div>
-    <div class="col-4">Col1
-      
+  <!-- payment Method SSLcomerz -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col" id="pay">
+        <img src="sslcommerzebanner.png" alt="" style="width: 100%;">
+        <caption>Pay With</caption>
+      </div>
     </div>
   </div>
- </div>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-4">
-  <div class="container">
-    <p>&copy; 2025 RISE. All rights reserved.</p>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 RISE. All rights reserved.</p>
+    </div>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- js custom link -->
+     <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
