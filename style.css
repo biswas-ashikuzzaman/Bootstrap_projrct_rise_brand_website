@@ -14,7 +14,101 @@
   z-index: 1000;
   border-top: 3px solid #d4af37;
 }
+/* Search box  */
+ .search-box {
+    flex: 1;
+    margin: 0 30px 0px 100px;
+    position: relative;
+  }
+  .search-box input {
+    /* Font & Text */
+	font-family: " montserratregular", sans-serif;
+	font-size: 17px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 25.5px;
+	text-decoration: none solid rgb(0, 0, 0);
+	text-align: start;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
 
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgb(245, 245, 245);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(0, 0, 0);
+/* Box */
+	height: 46.4807px;
+	width: 532.389px;
+	border: 0px none rgb(0, 0, 0);
+	border-top: 0px none rgb(0, 0, 0);
+	border-right: 0px none rgb(0, 0, 0);
+	border-bottom: 0px none rgb(0, 0, 0);
+	border-left: 0px none rgb(0, 0, 0);
+	margin-left: 700px;
+	padding: 8px 12px 13px 14px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+    /* Positioning */
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	float: none;
+	display: inline-block;
+	clear: none;
+	z-index: auto;
+	/* Miscellaneous */
+	overflow: clip;
+	cursor: text;
+	visibility: visible;
+	box-shadow: none;
+	border-top-left-radius: 31px;
+	border-top-right-radius: 31px;
+	border-bottom-left-radius: 31px;
+	border-bottom-right-radius: 31px;
+  }
+
+  /* Mega Navbar  */
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+
+
+body {
+  background: #eaafc8;
+  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+  background: linear-gradient(to right, #eaafc8, #654ea3);
+  min-height: 100vh;
+}
+
+code {
+  color: #745eb1;
+  background: #fff;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.text-uppercase {
+  letter-spacing: 0.08em;
+}
     /* .dropdown-mega {
       position: absolute;
       left: 0;
