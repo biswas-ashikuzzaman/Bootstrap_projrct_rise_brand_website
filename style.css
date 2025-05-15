@@ -125,12 +125,12 @@
   /* .hover-slide-up:hover {
     transform: translateY(-10px); /* moves up */
   /* } */ */
-  #pic1 img{
+  #pic1{
     overflow: hidden;
     transition: all 5s;
   }
   #pic1:hover img{
-   transform: scale(1.1);
+   /* transform: scale(1.1); */
   }
 
   /* carosel  */
@@ -235,9 +235,8 @@
  
  a.nav-link.active{
    font-weight: 700;
-   background-color:gold;
-   color:black;
-  
+   border-bottom: solid 2px goldenrod;
+   color:black !important;
  }
  
  a.navbar-brand{
