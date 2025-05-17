@@ -124,14 +124,7 @@
 
   /* .hover-slide-up:hover {
     transform: translateY(-10px); /* moves up */
-  /* } */ */
-  #pic1{
-    overflow: hidden;
-    transition: all 5s;
-  }
-  #pic1:hover img{
-   /* transform: scale(1.1); */
-  }
+  /* } */ 
 
   /* carosel  */
   .slider{
@@ -207,7 +200,8 @@
    
    .navbar .dropdown-menu {
      border: 1px solid rgba(0,0,0,.15);
-     background-color: #fff;
+     background-color: #fff !important;
+     margin-top: 8pxpx;
    }
  
  a.i{
@@ -240,7 +234,7 @@
  }
  
  a.navbar-brand{
-   color:white;
+   color:white !important;
    margin-left: 20px;
    margin-top: 1px;
    margin-bottom: 5px;
@@ -248,6 +242,6 @@
  
  
  span.navbar-toggler.icon{
-   color:black;
+   color:white;
  }
  
