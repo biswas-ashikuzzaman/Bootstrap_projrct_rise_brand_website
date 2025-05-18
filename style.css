@@ -154,7 +154,6 @@
  }
  
  
- 
    
  .navbar {
    padding-top:0px;
@@ -183,12 +182,13 @@
      border: 1px solid rgba(0,0,0,.15);
      background-color: #fff !important;
      margin-top: 8pxpx;
+     
    }
  
  a.i{
    margin-top:-20px;
    font-weight: 400;
-   color:black;
+   color: black !important;
  }
  
  a.catogary{
@@ -217,7 +217,7 @@
  a.navbar-brand{
    color:white !important;
    margin-left: 20px;
-   margin-top: 1px;
+   margin-top: 16px;
    margin-bottom: 5px;
  }
  
@@ -225,4 +225,18 @@
  span.navbar-toggler.icon{
    color:white;
  }
- 
+ #mega_nav{
+  margin-top: 5px;
+  height: 60px;
+ }
+ #ashik{
+  margin-top: 10px;
+ }
+ body, html {
+  height: 100%;
+}
+
+#mega_nav.sticky-top {
+  top: 0;
+  z-index: 1020; /* Ensure it stays on top */
+}

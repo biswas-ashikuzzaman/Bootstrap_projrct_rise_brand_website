@@ -8,10 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="dist/js/theme8.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="mens.css">
   <!-- Icon cdn  -->
   <link rel="stylesheet" href="style css/icon_cdn.css">
   <link rel="stylesheet" href="style css/fontwosome_cdn.css">
@@ -24,9 +27,6 @@
 <body>
 
   <!-- new navbar  -->
-
-
-  <!-- New navbar end  -->
   <!-- Top Bar -->
   <div class="top-bar" style="border-bottom: 1px solid gray">
     <div class="container d-flex justify-content-end">
@@ -35,8 +35,8 @@
   </div>
 
   <!-- Header Middle -->
-  <div class="container d-flex justify-content-between align-items-center py-3" style="height: 50px">
-    <img src="logo.png" alt="RISE Logo" style="height: 30px; margin: 10px 10px" />
+  <div class="container d-flex justify-content-between align-items-center py-3" style="height: 50px;margin-top: 5px;">
+   <a href="index.html"><img src="logo.png" alt="RISE Logo" style="height: 30px; margin: 10px 10px 10px 5px" /></a>
     <div class="search-box" style="margin-bottom: 5px">
       <input type="text" class="form-control mx-3 w-50" placeholder="Search Products..." />
       <i class="fas fa-search"></i>
@@ -51,8 +51,8 @@
   <!-- mega navbar start  -->
 
   <!--Navigation Var-->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="#">Home</a>
+  <nav class="navbar navbar-expand-sm bg-dark sticky-top" id="mega_nav">
+    <a class="navbar-brand" href="index.html">Home</a>
 
     <!--Toggle Collapse Button-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -72,7 +72,7 @@
           </a>
 
           <!--Div for catogary 1-->
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="ashik">
             <div class="container">
               <div class="row">
                 <!--Row 1-->
@@ -163,7 +163,7 @@
           </a>
 
           <!--Div for catogary 2-->
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="ashik">
             <div class="container">
               <div class="row">
                 <!--Row 1-->
@@ -229,6 +229,20 @@
                     </li>
                   </ul>
                 </div>
+                <div class="col-md-3">
+                  <!--Column 3-->
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Winter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link i" href="#">MAFFLAR</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link i" href="#">SWEATER</a>
+                    </li>
+                  </ul>
+                </div>
                 <!-- womens bannar pic  -->
                 <div class="col-md-3">
                   <img src="womens.jpg" alt="Womens Banner" class="img-fluid" style="margin-left: 30px" />
@@ -244,8 +258,8 @@
             <strong>Kids</strong>
           </a>
 
-          <!--Div for catogary 3-->
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!--Div for catogary kIDS-->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="ashik">
             <div class="container">
               <div class="row">
                 <!--Row 1-->
@@ -311,9 +325,7 @@
               </div>
             </div>
           </div>
-          <!-- Div for Catogary 5  -->
         </li>
-
         <!-- Category 5  -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle catogary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -321,8 +333,8 @@
             <strong> Accessories </strong>
           </a>
 
-          <!--Div for catogary 2-->
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!--Div for catogary Accessories-->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="ashik">
             <div class="container">
               <div class="row">
                 <!--Row 1-->
@@ -385,8 +397,8 @@
             <strong> Unisex </strong>
           </a>
 
-          <!--Div for catogary 2-->
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!--Div for catogary Unisex-->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="ashik">
             <div class="container">
               <div class="row">
                 <!--Row 1-->
@@ -456,178 +468,396 @@
             </div>
           </div>
         </li>
+        <a class="navbar-brand" href="#" style="margin-top: 22px;">Eid Collection</a>
+        <a class="navbar-brand" href="#" style="margin-top: 22px;">Up To 50% Off!!</a>
       </ul>
     </div>
   </nav>
   <!-- mega navbar end  -->
-
-  <!-- Banner Area  -->
-  <!-- Start banner area  -->
-  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="rise_bannar.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="rise_bannar.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="flash_sale.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- End banner area  -->
-
-  <!-- second banner area -->
-  <div class="container" style="max-width: 100%">
-    <div class="row px-2">
-      <div class="col-md-6 px-1">
-        <div class="newsec" style="overflow: hidden">
-          <a href="https://www.rise-brand.com/shop?category=mens">
-            <img class="img-fluid lazy" src="mens.jpg" />
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 px-1">
-        <div class="newsec" style="overflow: hidden">
-          <a href="https://www.rise-brand.com/shop?category=womens">
-            <img class="img-fluid lazy" src="womens.jpg" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- end second banner-new -->
-
-  <!-- BROWSE CATEGORIES  -->
-  <h2 style="text-align: center; font-size: 21px; margin-top: 10px">
-    BROWSE CATEGORIES
-  </h2>
-  <!-- content item image carousel  -->
-  <div class="slider owl-carousel">
-    <div class="card">
-      <a href="#"><img src="polo_shirt.jpg" alt="" /></a>
-      <div class="categories-title">
-        <a href="">
-          <h3 style="margin-left: 80px;">Polo-Shirt
-            <i class="fas fa-long-arrow-alt--right" aria-hidden="true"></i>
-          </h3>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#"><img src="punjabi.jpg" alt="" /></a>
-      <div class="categories-title">
-        <a href="">
-          <h3 style="margin-left: 80px;">Punjabi
-            <i class="fas fa-long-arrow-alt--right" aria-hidden="true"></i>
-          </h3>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#"><img src="joggers.jpg" alt="" /></a>
-      <div class="categories-title">
-        <a href="">
-          <h3 style="margin-left: 80px;">Joggers
-            <i class="fas fa-long-arrow-alt--right" aria-hidden="true"></i>
-          </h3>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#"><img src="accesories.jpg" alt="" /></a>
-      <div class="categories-title">
-        <a href="">
-          <h3 style="margin-left: 80px;">Accessories
-            <i class="fas fa-long-arrow-alt--right" aria-hidden="true"></i>
-          </h3>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#"><img src="Casual_tops.jpg" alt="" /></a>
-      <div class="categories-title">
-        <a href="">
-          <h3 style="margin-left: 80px;">Casual Tops
-            <i class="fas fa-long-arrow-alt--right" aria-hidden="true"></i>
-          </h3>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#"><img src="t-shirt.jpg" alt="" /></a>
-      <div class="categories-title">
-        <a href="">
-          <h3 style="margin-left: 80px;">T-Shirt
-            <i class="fas fa-long-arrow-alt--right" aria-hidden="true"></i>
-          </h3>
-        </a>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#"><img src="Ethentic_tops.jpg" alt="" /></a>
-      <div class="categories-title">
-        <a href="">
-          <h3 style="margin-left: 80px;">Ethentic-tops
-            <i class="fas fa-long-arrow-alt--right" aria-hidden="true"></i>
-          </h3>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- BROWSE CATEGORIES 2 -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-8">
-        <div class="col-12">
-          <img src="baseball jersy.jpg" alt="jersy" style=" margin-bottom:5px; height: 300px; width: 100%"
-            class="img-responsive" />
-          <div class="row">
-            <div class="col-6">
-              <img src="footwears.jpg" alt="footwears" style="width: 100%; height: 295px" />
+<!-- Card Item start  -->
+<div class="row" style="margin-top: 10px;">
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/punjabi 1.jpg">
+                    <img class="pic-2" src="image/mens card/punjabi 2.jpg">
+                </a>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
             </div>
-            <div class="col-6">
-              <img src="Membership_card.jpg" alt="Membership_card" style="width: 100%; height: 295px" />
+            <div class="product-content">
+                <h3 class="title"><a href="#">Mens Chino</a></h3>
+                <div class="price">$75.99</div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col-4">
-        <img src="denim.jpg" alt="denim" style="width: 100%; height: 600px" class="img-responsive" />
-      </div>
     </div>
-  </div>
-
-  <!-- promotion of website -->
-  <h3 style="margin-top: 20px; text-align: center">WE MAKE SHOPPING EASY</h3>
-  <div class=".container-fluid">
-    <div class="row">
-      <div class="col-md-4" style="margin-top: 5px">
-        <img src="lookbook.jpg" alt="lookbook" style="width: 100%" />
-      </div>
-      <div class="col-md-4" style="margin-top: 5px">
-        <img src="policies.jpg" alt="policies" style="width: 100%" />
-      </div>
-      <div class="col-md-4" style="margin-top: 5px">
-        <img src="offers.jpg" alt="offers" style="width: 100%" />
-      </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/tshirt1lg.jpg">
+                    <img class="pic-2" src="image/mens card/tshirt3lg.jpg">
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Men's T-Shirt</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/chino1.jpg">
+                    <img class="pic-2" src="image/mens card/chino2.jpg">
+                </a>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Mens Chino</a></h3>
+                <div class="price">$75.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/tshirt 5.jpg">
+                    <img class="pic-2" src="image/mens card/tshirt 6.jpg">
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Men's T-Shirt</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Card item  row 1 end  -->
+ <!-- card item row 2 start  -->
+<div class="row" style="margin-top: 10px;">
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/polo 1.jpg">
+                    <img class="pic-2" src="image/mens card/polo2.jpg">
+                </a>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Mens Polo-shirt</a></h3>
+                <div class="price">$1250</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/punjabi3.jpg">
+                    <img class="pic-2" src="image/mens card/punjabi4.jpg">
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Punjabi</a></h3>
+                <div class="price"><span>$2500</span> $71.55</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/formal_shirt1.jpg">
+                    <img class="pic-2" src="image/mens card/formal_shirt2.jpg">
+                </a>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Mens Formal Shirt</a></h3>
+                <div class="price">$ 2400</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/punjabi5.jpg">
+                    <img class="pic-2" src="image/mens card/punjabi6.jpg">
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Men's Punjabi</a></h3>
+                <div class="price"><span>$2300</span> $1500</div>
+            </div>
+        </div>
+    </div>
+</div>
 
+ <!-- card item row 2 end  -->
+  <!-- Card Item start  -->
+<div class="row" style="margin-top: 10px;">
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/punjabi 1.jpg">
+                    <img class="pic-2" src="image/mens card/punjabi 2.jpg">
+                </a>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Mens Chino</a></h3>
+                <div class="price">$75.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/tshirt1lg.jpg">
+                    <img class="pic-2" src="image/mens card/tshirt3lg.jpg">
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Men's T-Shirt</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/chino1.jpg">
+                    <img class="pic-2" src="image/mens card/chino2.jpg">
+                </a>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Mens Chino</a></h3>
+                <div class="price">$75.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/tshirt 5.jpg">
+                    <img class="pic-2" src="image/mens card/tshirt 6.jpg">
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Men's T-Shirt</a></h3>
+                <div class="price"><span>$86.33</span> $71.55</div>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <!-- Footer new  -->
+<!-- Card item  row 1 end  -->
+ <!-- card item row 2 start  -->
+<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/polo 1.jpg">
+                    <img class="pic-2" src="image/mens card/polo2.jpg">
+                </a>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Mens Polo-shirt</a></h3>
+                <div class="price">$1250</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/punjabi3.jpg">
+                    <img class="pic-2" src="image/mens card/punjabi4.jpg">
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Punjabi</a></h3>
+                <div class="price"><span>$2500</span> $71.55</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/formal_shirt1.jpg">
+                    <img class="pic-2" src="image/mens card/formal_shirt2.jpg">
+                </a>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Mens Formal Shirt</a></h3>
+                <div class="price">$ 2400</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="image/mens card/punjabi5.jpg">
+                    <img class="pic-2" src="image/mens card/punjabi6.jpg">
+                </a>
+                <span class="product-sale-label">Sale</span>
+                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
+                    <i class="far fa-heart"></i>
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Men's Punjabi</a></h3>
+                <div class="price"><span>$2300</span> $1500</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- card item row 2 end  -->
+
+ 
+
+ <!-- Footer new  -->
   <!-- Footer content -->
   <div class="notifications" id="notificationWishlist"></div>
   <!-- //footer style One -->
@@ -655,11 +885,9 @@
               <p class="social">
 
 
-                <a target="_self" href="#"><i
-                    class="fab fa-facebook-f"></i></a>
+                <a target="_self" href="#"><i class="fab fa-facebook-f"></i></a>
                 <a target="_self" href="#"><span class="fab fa-twitter"></span></a>
-                <a target="_self" href="#"><span
-                    class="fab fa-linkedin"></span></a>
+                <a target="_self" href="#"><span class="fab fa-linkedin"></span></a>
 
                 <a target="_self" href="#"><i class="fab fa-instagram">
                   </i></a>
@@ -704,15 +932,15 @@
           <div class="row">
             <div class="col-12">
               <ul class="links-list pl-0 mb-0">
-                <li><a href="https://www.rise-brand.com/page?name=about-us">About Us </a></li>
-                <li><a href="https://www.rise-brand.com/contact">Contact Us </a></li>
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Contact Us </a></li>
 
 
-                <li><a href="https://www.rise-brand.com/store-locator">Store Locator </a></li>
-                <li><a href="https://www.rise-brand.com/page?name=loyalty-club-card">Loyalty Club Card </a></li>
-                <li><a href="https://www.rise-brand.com/page?name=size-guide">Size Guide </a></li>
-                <li><a href="https://www.rise-brand.com/page?name=join-with-us"> Join Us </a></li>
-                <li><a href="https://www.rise-brand.com/fit-guide">Fit Guide </a></li>
+                <li><a href="#">Store Locator </a></li>
+                <li><a href="#">Loyalty Club Card </a></li>
+                <li><a href="#">Size Guide </a></li>
+                <li><a href="#"> Join Us </a></li>
+                <li><a href="#">Fit Guide </a></li>
 
               </ul>
             </div>
@@ -730,14 +958,13 @@
           <div class="row">
             <div class="col-12">
               <ul class="links-list pl-0 mb-0">
-                <li><a href="https://www.rise-brand.com/page?name=customer-service">Customer Service</a></li>
-                <li><a href="https://www.rise-brand.com/page?name=privacy-policy">Privacy Policy </a></li>
-                <li><a href="https://www.rise-brand.com/page?name=term-services">Terms and Condition </a></li>
-                <li><a href="https://www.rise-brand.com/page?name=billing-and-shipping-policy">Billing and Shipping
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Terms and Condition </a></li>
+                <li><a href="#">Billing and Shipping
                     Policy </a></li>
-                <li><a href="https://www.rise-brand.com/page?name=return-and-exchange-policy">Return and Exchange
+                <li><a href="#">Return and Exchange
                     Policy</a></li>
-                <li><a href="https://www.rise-brand.com/orders">Track Your Order </a></li>
+                <li><a href="#">Track Your Order </a></li>
 
               </ul>
             </div>
@@ -754,7 +981,7 @@
 
 
       </div>
-      <img src="https://d2izus7yvo9igu.cloudfront.net/web/images/sslcommerzebanner.png" class="img-fluid mb-2" alt="">
+      <img src="sslcommerzebanner.png" class="img-fluid mb-2" alt="">
 
 
     </div>
@@ -773,7 +1000,7 @@
             RISE Brand</a>. All Rights Reserved.
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-end">
-            Design & Developed by <a href="https://mediasoftbd.com/">Mediasoft Data Systems Limited</a>
+            Design & Developed by <a href="#">Mediasoft Data Systems Limited</a>
           </div>
         </div>
       </div>
@@ -781,243 +1008,3 @@
   </footer>
 
   <!-- End Footer content -->
-   <footer id="footerMobile" class="footer-area footer-mobile d-lg-none d-xl-none">
-
-
-    <div class="container-fluid p-0 mbl-foot">
-        <div class="container">
-
-            <div id="accordion" class="mob-footer">
-
-
-                <div class="card-mf">
-                    <div id="headingOne">
-                        <div class="mb-0 mf-ftr">
-                            <h6 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                <img class="img-fluid lazy"
-                                     src="white_logo.png"
-                                     alt="Site Logo" style="padding-left: 13px;margin:7px;height: 26px;">
-                            </h6>
-                            <p style="padding-left: 13px;margin:7px;"> RISE is a fashion forward retailer that blends local culture with global trends creating a unique spin on fashion. Pioneering Streetwear into the Bangladesh market, RISE offers a wide array of clothing and accessories.</p>
-                        </div>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                        <!--                            <address style="margin-top: -20px;">
-
-
-
-                            </address>-->
-
-                            <p style="color:#fff !important; text-decoration: none; font-size: 14px; font-style: italic;
-}">Connect with Us</p>
-                            <div class="footer-social hover-iconsocial ml-3 mt-3 mf-social">
-                                <p class="social">
-
-                                    <a target="_blank"
-                                       href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank"
-                                       href="#"><span
-                                            class="fab fa-twitter"></span></a>
-                                    <a target="_blank"
-                                       href="#"><span
-                                            class="fab fa-linkedin"></span></a>
-                                    <a target="_blank" href="#"><i
-                                            class="fab fa-instagram"> </i></a>
-                                    
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card-mf">
-                    <div id="headingTwo">
-                        <div class="mb-0 mf-ftr">
-                            <h6 class="collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="fa fa-angle-right"></i> CONTACT INFO
-                            </h6>
-                        </div>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12 mf-two mh-two">
-                                    
-                                    <a href="tel:01708156699"><p
-                                            style="margin-bottom: 0px;"><i class="fa fa-phone"
-                                                                           style="margin-right: 10px;"></i>01708156699
-                                        </p></a>
-                                    <div class="row" style="margin-left: 16px;">
-                                        <p>( 10 AM – 6 PM )
-                                            <br>
-                                            (Except Weekend/Govt. Holidays)
-                                        </p>
-                                    </div>
-
-                                    <p style="margin-bottom: 0px;"><i class="fa fa-envelope"
-                                                                      style="margin-right: 10px;"></i><a
-                                            href="mailto:online@rise-brand.com"
-                                            style=" color:#fff !important;">online@rise-brand.com</a>
-                                    </p>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-mf">
-                    <div id="headingThree">
-                        <div class="mb-0 mf-ftr">
-                            <h6 class="collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                <i class="fa fa-angle-right"></i> INFORMATION
-                            </h6>
-                        </div>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12 mf-three">
-                                    <ul class="links-list pl-0 mb-0" style="list-style-type: none;">
-                                        <li><a href="https://www.rise-brand.com/page?name=about-us">About Us </a></li>
-                                        <li><a href="https://www.rise-brand.com/contact">Contact Us </a></li>
-                                        
-                                        
-                                        <li><a href="https://www.rise-brand.com/store-locator">Store Locator </a></li>
-                                        <li><a href="https://www.rise-brand.com/page?name=loyalty-club-card">Loyalty Club
-                                                Card </a></li>
-                                        <li><a href="https://www.rise-brand.com/page?name=size-guide">Size Guide </a></li>
-                                        <li><a href="https://www.rise-brand.com/join-with-us">Join Us </a></li>
-                                        <li><a href="https://www.rise-brand.com/fit-guide">Fit Guide </a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="card-mf">
-                    <div id="headingFour">
-                        <div class="mb-0 mf-ftr">
-                            <h6 class="collapsed" data-toggle="collapse" data-target="#collapseFour"
-                                aria-expanded="false" aria-controls="collapseFour">
-                                <i class="fa fa-angle-right"></i> Service and Shopping
-                            </h6>
-                        </div>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12 mf-three">
-                                    <ul class="links-list pl-0 mb-0" style="list-style-type: none">
-                                        <li><a href="https://www.rise-brand.com/page?name=customer-service">Customer Service</a>
-                                        </li>
-                                        <li><a href="https://www.rise-brand.com/page?name=privacy-policy">Privacy Policy </a></li>
-                                        <li><a href="https://www.rise-brand.com/page?name=term-services">Terms and Condition </a>
-                                        </li>
-                                        <li><a href="https://www.rise-brand.com/page?name=billing-and-shipping-policy">Billing and
-                                                Shipping Policy </a></li>
-                                        <li><a href="https://www.rise-brand.com/page?name=return-and-exchange-policy">Return and
-                                                Exchange Policy</a></li>
-                                        <li><a href="https://www.rise-brand.com/orders">Track Your Order </a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-                <img src="sslcommerzebanner.png" class="img-fluid mb-2"
-                     alt="">
-                <div class="card-mf">
-                    <div class="footer-address ">
-                        <p style="font-size: 13px !important;">Developed By <a href="https://www.mediasoftbd.com/"
-                                                                               target="_blank">Mediasoft Data Systems
-                                Ltd.</a></p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- <div class="container-fluid p-0 fixed-bottom">
-        <div class="copyright-content">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-4" id="div1">
-                        <div class="mb-toolbar-inner row">
-                            <div class="footer-iconmenu ">
-                                <ul>
-
-                                    <li><a href="javascript:void(0)" class="navigation-mobile-toggler mfootbar">
-                                            <i class="fa fa-navicon"></i>
-                                        </a>
-                                    </li>
-                                    <li><a href="https://www.rise-brand.com"> <i class="fa fa-home"></i></a></li>
-                                    <li><a href="#"> <i class="fa fa-search"></i></a></li>
-                                    <li><a href="https://www.rise-brand.com/viewcart"> <i class="fas fa-shopping-cart"></i></a>
-                                    </li>
-                                    <li><a href="###"> <i class="fas fa-ellipsis-h" id="link1"></i> </a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div> 
-
-                    <div class="col-12 col-md-4" id="div2">
-
-                        <div class="mb-toolbar-inner row">
-                            <div class="footer-iconmenu">
-                                <ul>
-                                    <li><a href="#"> <i class="fa fa-map-marker"></i></a></li>
-                                    <li><a href="https://www.rise-brand.com/wishlist"> <i class="fa fa-heart-o"></i></a></li>
-                                    <li><a href="https://www.rise-brand.com/compare"> <i class="fa fa-random"></i></a></li>
-                                    <li><a href="https://www.rise-brand.com/profile"> <i class="fa fa-user-o"></i></a></li>
-                                    <li><a href="###"> <i class="fas fa-times" id="link2"></i> </a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div> 
-
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-</footer>
-
-
-  <!-- Footer New end  -->
- 
-  <!-- js custom link -->
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
